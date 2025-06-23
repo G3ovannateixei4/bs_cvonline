@@ -1,0 +1,56 @@
+
+body {
+ background-color: #cfb8d8;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #d99de2; 
+  color: white;
+  padding: 15px 0;
+}
+
+header .navbar-brand {
+  font-weight: bold;
+}
+
+header .navbar-nav .nav-link {
+  color: white;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #d1aad1; 
+}
+
+/* Seção de Perfil */
+#sobre-mim .card {
+  background-color: #e9d5e7; 
+  border-radius: 10px;
+}
+
+#sobre-mim .card-img-top {
+  border-radius: 10px;
+}
+
+/* Formulário de Contato */
+form button {
+  background-color: #6a4c93;
+  border-color: #6a4c93;
+}
+
+form button:hover {
+  background-color: #9b7cbf;
+  border-color: #9b7cbf;
+}
+
+
+section {
+  padding-top: 80px; 
+}
+
+
+.bg-lilas {
+    background-color: #9b59b6 !important;
+}
+

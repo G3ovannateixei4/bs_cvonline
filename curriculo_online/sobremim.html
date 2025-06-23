@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online</title>
+    <!-- Link para o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adicionando mais cor e descontração */
+        body {
+            background-color: #f7f5ff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            padding-top: 80px; /* Para garantir que o cabeçalho fixo não sobreponha o conteúdo */
+        }
+
+        header {
+            background-color: #9b59b6;
+        }
+
+        nav .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12 !important;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Efeito de flutuar quando passa o mouse */
+        }
+
+        .card-img-top {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 20px auto;
+            border: 5px solid #9b59b6;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 2.5rem;
+            color: #9b59b6;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .card-text {
+            font-size: 1.3rem;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .card-text span {
+            font-size: 1.1rem;
+            color: #9b59b6;
+            font-weight: bold;
+        }
+
+        /* Estilo adicional para mais leveza */
+        h6 {
+            font-size: 1.4rem;
+            color: #9b59b6;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #9b59b6;
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #9b59b6;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #8e44ad;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Início: Cabeçalho e Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-lilas fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sobre Mim</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Seções
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="portifolio.html">Portfólio</a></li>
+                                <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim: Cabeçalho e Navegação -->
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="my-5 pt-5">
+        <div class="container">
+            <h2 class="section-title">Quem Sou Eu?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/4.png" class="card-img-top img-fluid" alt="Foto de perfil">
+                        <div class="card-body">
+                            <h5 class="card-title">Ge</h5>
+                            <p class="card-text">
+                                Sou uma desenvolvedora Front-End de 17 anos, apaixonada por criar interfaces modernas e com muito estilo! 💻✨
+                                <br>
+                                <span>Transformo ideias em experiências digitais!</span>
+                            </p>
+                            <button class="btn btn-custom" onclick="window.location.href='contato.html'">Vamos conversar!</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

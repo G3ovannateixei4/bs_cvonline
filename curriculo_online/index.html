@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online</title>
+    <!-- Link para o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Início: Cabeçalho e Navegação -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-lilas fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Meu Currículo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seções
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sobremim.html">Sobre Mim</a></li>
+              <li><a class="dropdown-item" href="portifolio.html">Portfólio</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Fim: Cabeçalho e Navegação -->
+<section id="sobre" class="my-5">
+  
+  <div class="row">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow">
+        <img src="img/4.png" class="card-img-top img-fluid" alt="Foto de perfil">
+        <div class="card-body">
+          <h5 class="card-title">Geovanna Teixeira</h5>
+          <p class="card-text">
+            Sou uma desenvolvedora Front-End com foco em interfaces modernas, responsivas e de alta performance. Tenho paixão por criar experiências digitais acessíveis e intuitivas.
+          </p>
+          <h6>Skills:</h6>
+          <span class="badge bg-primary">HTML5</span>
+          <span class="badge bg-success">CSS3</span>
+          <span class="badge bg-warning text-dark">JavaScript</span>
+          <span class="badge bg-info text-dark">Bootstrap 5</span>
+          <span class="badge bg-secondary">Git & GitHub</span>
+          <span class="badge bg-dark">Figma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ÁREA INTERATIVA -->
+<section id="interativa" class="my-5">
+ 
+
+  <!-- ACCORDION -->
+  <div class="accordion mb-4" id="accordionExperiencia">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingExp1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1">
+          Experiência Profissional
+        </button>
+      </h2>
+      <div id="collapseExp1" class="accordion-collapse collapse show" data-bs-parent="#accordionExperiencia">
+        <div class="accordion-body">
+          <strong>Desenvolvedora Front-End</strong><br>
+          - Desenvolvimento de interfaces com HTML, CSS, JS e Bootstrap<br>
+          - Criação de páginas responsivas e otimizadas para performance<br>
+          - Experiência prática com desenvolvimento de sistemas CRUD  <br>
+          <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalProjeto">
+            Ver mais detalhes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingExp2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2">
+          Habilidades Técnicas
+        </button>
+      </h2>
+      <div id="collapseExp2" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia">
+        <div class="accordion-body">
+          HTML5, CSS3, JavaScript, Bootstrap, Git, Figma, Responsividade.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MODAL -->
+  <div class="modal fade" id="modalProjeto" tabindex="-1" aria-labelledby="modalProjetoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProjetoLabel">Detalhes do Projeto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Projeto: CRUD (Create, Read, Update, Delete) </strong></p>
+          <p>Tenho experiência prática com desenvolvimento de sistemas CRUD,
+             aplicando conceitos de manipulação de dados e interfaces funcionais. Ao longo de 1 ano no SENAI,
+              participei de diversos projetos práticos, onde desenvolvi aplicações web utilizando HTML, CSS,
+               JavaScript e ferramentas complementares,
+             sempre com foco na organização, funcionalidade e boas práticas de programação.</p>
+          <ul>
+            
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

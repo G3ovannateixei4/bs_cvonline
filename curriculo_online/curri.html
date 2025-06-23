@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Silva - Currículo Online</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@2.8.0/dist/react-bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/babel">
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import { Navbar, NavDropdown, Nav, Card, Accordion, Carousel, ListGroup } from 'react-bootstrap';
+
+    const App = () => {
+      return (
+        <div className="container mt-4">
+          {/* Navbar */}
+          <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="#home">João Silva</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <NavDropdown title="Seções" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#perfil">Perfil</NavDropdown.Item>
+                  <NavDropdown.Item href="#formacao">Formação</NavDropdown.Item>
+                  <NavDropdown.Item href="#experiencia">Experiência</NavDropdown.Item>
+                  <NavDropdown.Item href="#projetos">Projetos</NavDropdown.Item>
+                  <NavDropdown.Item href="#contato">Contato</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+
+          {/* Perfil */}
+          <Card id="perfil" className="mb-4">
+            <Card.Img variant="top" src="https://via.placeholder.com/150" alt="Foto de Perfil" />
+            <Card.Body>
+              <Card.Title>João Silva</Card.Title>
+              <Card.Text>
+                Sou um desenvolvedor de software com experiência em...
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          {/* Experiência Profissional */}
+          <Accordion id="experiencia" className="mb-4">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Empresa A (2019-2021)</Accordion.Header>
+              <Accordion.Body>
+                Desenvolvi aplicações web utilizando React e Node.js.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Empresa B (2018-2019)</Accordion.Header>
+              <Accordion.Body>Estagiário</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+
+          {/* Formação Acadêmica */}
+          <Card id="formacao" className="mb-4">
+            <Card.Body>
+              <Card.Title>Universidade X</Card.Title>
+              <Card.Text>Bacharelado em Ciência da Computação</Card.Text>
+            </Card.Body>
+          </Card>
+
+          {/* Carrossel de Projetos */}
+          <Carousel id="projetos" className="mb-4">
+            <Carousel.Item>
+              <img className="d-block w-100" src="https://via.placeholder.com/800x400?text=Project+1" alt="Project 1" />
+              <Carousel.Caption>
+                <h3>Project 1</h3>
+                <p>Breve descrição do projeto 1.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src="https://via.placeholder.com/800x400?text=Project+2" alt="Project 2" />
+              <Carousel.Caption>
+                <h3>Project 2</h3>
+                <p>Breve descrição do projeto 2.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src="https://via.placeholder.com/800x400?text=Project+3" alt="Project 3" />
+              <Carousel.Caption>
+                <h3>Project 3</h3>
+                <p>Breve descrição do projeto 3.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+
+          {/* Contato */}
+          <ListGroup id="contato" className="mb-4">
+            <ListGroup.Item><strong>Email:</strong> joao.silva@email.com</ListGroup.Item>
+            <ListGroup.Item><strong>Telefone:</strong> +55 21 98765-4321</ListGroup.Item>
+            <ListGroup.Item><strong>LinkedIn:</strong> linkedin.com/in/joao-silva</ListGroup.Item>
+          </ListGroup>
+
+          {/* Footer */}
+          <footer className="bg-light p-3 text-center">
+            <p>Contato: joao.silva@gmail.com | +55 21 98765-4321</p>
+          </footer>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
